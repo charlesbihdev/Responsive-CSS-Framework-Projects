@@ -1,0 +1,60 @@
+body {font-family: "Lato", sans-serif}
+.image-container{    
+    position: relative;
+    top: 1cm;
+    background-image: url(./w3-images/chicago.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20cm;
+    animation:image-slide 15s infinite;
+    color: white;
+    padding-top: 13cm;
+    text-align: center;
+}
+@keyframes image-slide{
+    0%{background-image: url(./w3-images/chicago.jpg);}
+    50%{background-image: url(./w3-images/la.jpg);}
+    100%{background-image: url(./w3-images/ny.jpg);}
+    
+}
+#text-container{
+    text-align: left;
+    padding-top: 2cm;
+
+}
+.text1{
+    margin-right: 6cm;
+    margin-left: 6cm;
+    margin-bottom: 1cm;
+}
+h2{
+    text-align: center;
+}
+h3{
+    opacity: 0.5;
+    text-align: center;
+}
+.images-c{
+    display: flex;
+    grid-template-columns: 3, 1fr;
+    grid-gap: 0.5px;
+    margin-bottom: 2cm;
+}
+.w3-third1{
+    background-color: white;
+    max-width: 20%;
+    margin-left: 8cm;
+}
+.w3-third2{
+    background-color: white;
+    max-width: 20%;
+}
+.w3-third3{
+    background-color: white;
+    max-width: 20%;
+}
+.w3-black{
+    margin-bottom: 1cm;
+}
